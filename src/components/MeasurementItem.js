@@ -1,18 +1,18 @@
-// import { Link } from 'react-router-dom';
+ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+
+
 
 const MeasurementItem = ({ id, category }) => (
-//   <Link to={`/progress/${id}`} className="measurement-item">
+  <Link to={`/progress/${id}`} className="measurement-item">
     <div>
       <p className="name">{category}</p>
-      <Link to={`/Crypto/${category.id}`}>View</Link>
     </div>
-//   </Link>
+  </Link>
 );
 
 MeasurementItem.propTypes = {
-//   id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
 //   image: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
 };
