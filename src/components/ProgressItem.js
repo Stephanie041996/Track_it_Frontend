@@ -18,7 +18,7 @@ const ProgressItem = ({ date, data }) => (
 
 ProgressItem.propTypes = {
   date: PropTypes.string.isRequired,
-  data: PropTypes.string.isRequired,
+  data: PropTypes.number.isRequired,
 };
 
 export default ProgressItem;

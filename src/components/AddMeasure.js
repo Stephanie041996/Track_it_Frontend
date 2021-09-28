@@ -8,7 +8,7 @@ const AddMeasure = () => {
     id: 1,
   });
 
-  const [measureData, setMeasureData] = useState({
+  const [transactionData, setTransactionData] = useState({
     data: 0.01,
   });
   // Load measurements from state
@@ -23,7 +23,7 @@ const AddMeasure = () => {
   };
 
   const handleInputChange = (e) => {
-    setMeasureData({
+    setTransactionData({
       data: e.target.value,
     });
   };
@@ -35,7 +35,7 @@ const AddMeasure = () => {
         id: measurementId.id,
       },
       measure: {
-        data: measureData.data,
+        data: transactionData.data,
       },
     };
     axios
