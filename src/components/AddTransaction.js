@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 
-const AddMeasure = () => {
+const AddTransaction = () => {
   const [measurementId, setMeasurementId] = useState({
     id: 1,
   });
@@ -40,7 +40,7 @@ const AddMeasure = () => {
     };
     axios
       .post(
-        'https://tracking-app-be-zil.herokuapp.com/api/v1/measurements',
+        'http://localhost:3000/measurements',
         payload,
       )
       .then(() => {
@@ -69,7 +69,7 @@ const AddMeasure = () => {
             type="number"
             step="0.01"
             min="0"
-            placeholder="0.01 cm"
+            placeholder="$50.01"
             onChange={handleInputChange}
           />
         </div>
@@ -81,4 +81,4 @@ const AddMeasure = () => {
   );
 };
 
-export default AddMeasure;
+export default AddTransaction;
