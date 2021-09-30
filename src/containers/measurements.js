@@ -18,6 +18,7 @@ const Measurements = () => {
         <MeasurementItem
           key={measurement.id}
           id={measurement.id}
+          icon={measurement.icon}
           category={measurement.category}
         />
         

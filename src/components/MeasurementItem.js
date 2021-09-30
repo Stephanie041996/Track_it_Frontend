@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 
 
 
-const MeasurementItem = ({ id, category }) => (
+const MeasurementItem = ({ id, icon, category }) => (
   <Link to={`/progress/${id}`} className="measurement-item">
+    <img alt="Measurement Item" src={icon} />
     <div>
       <p className="name">{category}</p>
     </div>
@@ -13,7 +14,7 @@ const MeasurementItem = ({ id, category }) => (
 
 MeasurementItem.propTypes = {
   id: PropTypes.number.isRequired,
-//   image: PropTypes.string.isRequired,
+ icon: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
 };
 
