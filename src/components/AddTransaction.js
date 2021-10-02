@@ -40,7 +40,7 @@ const AddTransaction = () => {
     };
     axios
       .post(
-        'http://localhost:3000/measurements/',
+        'http://localhost:3001/measurements/',
         payload,
       )
       .then(() => {
