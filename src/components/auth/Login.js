@@ -7,7 +7,7 @@ export default class Login extends Component {
 
     this.state = {
       username: "",
-      password: "",
+      // password: "",
       loginErrors: ""
     };
 
@@ -22,7 +22,7 @@ export default class Login extends Component {
   }
 
   handleSubmit(event) {
-    const { username, password } = this.state;
+    const { username} = this.state;
 
     axios
       .post(
@@ -30,7 +30,7 @@ export default class Login extends Component {
         {
           user: {
             username: username,
-            password: password
+            // password: password
           }
         },
         { withCredentials: true }
@@ -59,14 +59,14 @@ export default class Login extends Component {
             required
           />
 
-          <input
+          {/* <input
             type="password"
             name="password"
             placeholder="Password"
             value={this.state.password}
             onChange={this.handleChange}
             required
-          />
+          /> */}
 
           <button type="submit">Login</button>
         </form>

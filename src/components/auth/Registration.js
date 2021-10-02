@@ -7,8 +7,8 @@ export default class Registration extends Component {
 
     this.state = {
       username: "",
-      password: "",
-      password_confirmation: "",
+      // password: "",
+      // password_confirmation: "",
       registrationErrors: ""
     };
 
@@ -23,7 +23,7 @@ export default class Registration extends Component {
   }
 
   handleSubmit(event) {
-    const { username, password, password_confirmation } = this.state;
+    const { username} = this.state;
 
     axios
       .post(
@@ -31,8 +31,8 @@ export default class Registration extends Component {
         {
           user: {
             username: username,
-            password: password,
-            password_confirmation: password_confirmation
+            // password: password,
+            // password_confirmation: password_confirmation
           }
         },
         { withCredentials: true }
@@ -61,7 +61,7 @@ export default class Registration extends Component {
             required
           />
 
-          <input
+          {/* <input
             type="password"
             name="password"
             placeholder="Password"
@@ -77,7 +77,7 @@ export default class Registration extends Component {
             value={this.state.password_confirmation}
             onChange={this.handleChange}
             required
-          />
+          /> */}
 
           <button type="submit">Register</button>
         </form>
