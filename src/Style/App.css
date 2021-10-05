@@ -1,0 +1,50 @@
+.measurements {
+  height: 82%;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 8rem);
+  padding-top: 200px;
+}
+
+.measurement-item {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: white;
+  box-shadow: 2px 2px 5px gray;
+}
+
+.measurement-item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.measurement-item img {
+  width: 4.5rem;
+  filter:
+    invert(68%) sepia(34%) saturate(764%) hue-rotate(169deg)
+    brightness(94%) contrast(91%);
+}
+
+.bottom-nav {
+    list-style-type: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ 
+}
+
+.bottom-nav a{
+  color: white;
+  text-decoration: none;
+}
+

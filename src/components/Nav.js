@@ -13,29 +13,28 @@ const Nav = () => {
 
   return (
     <nav>
-      <div className="bottom-buttons">
+      <div className="bottom-nav">
         <Link to="/add" className="button-wrapper">
           <i className="far fa-plus-square" />
-          <p>Add measure</p>
+          <p>Add Transaction</p>
         </Link>
-        {/* <Link to="/tracker" className="button-wrapper">
+        <Link to="/tracker" className="button-wrapper">
           <i className="fas fa-chart-line" />
-          <p>Tracker</p>
-        </Link> */}
+          <p>Track It </p>
+        </Link>
+        
         <Link to="/progress/1" className="button-wrapper">
           <i className="fas fa-chart-pie" />
-          <p>Progress</p>
+          <p>Expenses</p>
         </Link>
-        {/* <div
+        <div
           role="button"
           tabIndex={0}
           className="button-wrapper"
-          onClick={handleClick}
-          onKeyPress={handleClick}
         >
           <i className="fas fa-sign-out-alt" />
           <p>Logout</p>
-        </div> */}
+        </div>
       </div>
     </nav>
   );
