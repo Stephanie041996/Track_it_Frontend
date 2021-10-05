@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const loadMeasurements = () => async (dispatch) => {
   axios
-    .get('http://127.0.0.1:3001/measurements')
+    .get('https://guarded-brushlands-05784.herokuapp.com/measurements')
     .then(
       (response) => dispatch({
         type: 'FETCH_MEASUREMENTS',

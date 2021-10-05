@@ -17,7 +17,7 @@ const Progress = () => {
   useEffect(() => {
     axios
       .get(
-        `http://127.0.0.1:3001/measurements/${measurementId}`,
+        `https://guarded-brushlands-05784.herokuapp.com/measurements/${measurementId}`,
       )
       .then((response) => {
         setTransactions(sortObjByDate(response.data.transactions));

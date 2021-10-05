@@ -43,7 +43,7 @@ const AddTransaction = () => {
     };
     axios
       .post(
-        'http://localhost:3001/measurements/',
+        'https://guarded-brushlands-05784.herokuapp.com/measurements/',
         payload,
       )
       .then(() => {
