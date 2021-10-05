@@ -9,7 +9,6 @@ import MeasurementItem from '../components/MeasurementItem';
  import Banner from '../components/Banner'
  
 const Measurements = () => {
-  // Load measurements from state
   const measurements = useSelector((state) => state.measurements.measurements);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -34,8 +33,9 @@ const Measurements = () => {
         />
         
       ))}
-          <Nav />
+        
     </div>
+    <Nav />
     </>
   );
 };

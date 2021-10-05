@@ -1,3 +1,7 @@
+body {
+  overflow: none;
+  width: 100%;
+}
 .measurements {
   height: 82%;
   justify-content: center;
@@ -5,6 +9,8 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 8rem);
   padding-bottom: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
 
 }
 
@@ -58,6 +64,7 @@
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
+  z-index:1;
 
 }
 
@@ -101,7 +108,7 @@ text-decoration: none;
   align-items: center;
 }
 
-button {
+.container, button {
   width: 150px;
 }
 
@@ -114,4 +121,39 @@ button {
   padding-top: 70px;
   text-align: center;
 
+}
+
+.Login-form{
+align-items: center;
+padding-left: 200px;
+}
+
+.select-box{
+  height: 45px;
+  width: 409px;
+}
+
+.input-box{
+  height: 40px;
+  width: 400px;
+}
+
+.input-form{
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  height: 45px;
+  width: 409px;
+}
+
+.home-section{
+
+text-align: center;
+  padding-top: 150px;
+}
+
+.banner-chart img{
+  width: 100%;
 }

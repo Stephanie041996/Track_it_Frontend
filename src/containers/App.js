@@ -8,20 +8,11 @@ import {
 // import { useDispatch } from 'react-redux';
 import Measurements from './measurements';
 import Progress from './Progress';
-import Nav from '../components/Nav';
 import AddTransaction from '../components/AddTransaction';
-
-
-
-// function App() {
-  // const dispatch = useDispatch();
-  // useEffect(() => {
-  //   dispatch(loadMeasurements());
-  // }, [dispatch]);
   import axios from "axios";
-
   import Home from "../components/Home";
-import Topbanner from '../components/Topbanner';
+  import Home2 from "../components/Home2"
+
 
   
   export default class App extends Component {
@@ -87,14 +78,26 @@ import Topbanner from '../components/Topbanner';
     <div className="App">
       <Switch>
  
-        {/* <Route path="/" exact component={Measurements} /> */}
         <Route exact path="/add" component={AddTransaction} />
         <Route path="/progress/:measurementId" component={Progress} />
+      
         <Route
               exact
               path={"/"}
               render={props => (
                 <Home
+                  {...props}
+                  handleLogin={this.handleLogin}
+                  handleLogout={this.handleLogout}
+                  loggedInStatus={this.state.loggedInStatus}
+                />
+              )}
+            />
+              <Route
+              exact
+              path={"/reg"}
+              render={props => (
+                <Home2
                   {...props}
                   handleLogin={this.handleLogin}
                   handleLogout={this.handleLogout}

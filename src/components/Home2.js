@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Link } from 'react-router-dom';
-import Login from "./auth/Login";
+import Registration from "./auth/Registration";
 
 export default class Home extends Component {
   constructor(props) {
@@ -30,10 +30,11 @@ export default class Home extends Component {
   render() {
     return (
       <div className="home-section">
-      
-        <Login handleSuccessfulAuth={this.handleSuccessfulAuth} />
-        <Link to="/reg">Not Registerd ? Register</Link>
-    
+       
+        <Registration handleSuccessfulAuth={this.handleSuccessfulAuth} />
+     
+        <Link to="/">Already Registerd ? Log in</Link>
+
       </div>
     );
   }

@@ -7,8 +7,6 @@ export default class Registration extends Component {
 
     this.state = {
       username: "",
-      // password: "",
-      // password_confirmation: "",
       registrationErrors: ""
     };
 
@@ -31,8 +29,7 @@ export default class Registration extends Component {
         {
           user: {
             username: username,
-            // password: password,
-            // password_confirmation: password_confirmation
+
           }
         },
         { withCredentials: true }
@@ -50,9 +47,10 @@ export default class Registration extends Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
+      <div className="Login-form">
+        <form  className='input-form' onSubmit={this.handleSubmit}>
           <input
+             className='input-box'
             type="text"
             name="username"
             placeholder="User Name"
@@ -61,23 +59,7 @@ export default class Registration extends Component {
             required
           />
 
-          {/* <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            value={this.state.password}
-            onChange={this.handleChange}
-            required
-          />
-
-          <input
-            type="password"
-            name="password_confirmation"
-            placeholder="Password confirmation"
-            value={this.state.password_confirmation}
-            onChange={this.handleChange}
-            required
-          /> */}
+          
 
           <button type="submit">Register</button>
         </form>

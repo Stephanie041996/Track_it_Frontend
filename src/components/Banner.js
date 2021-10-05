@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import chart from '../Style/chart1.png'
 
 const Banner = () => {

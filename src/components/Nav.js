@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
-// import { useDispatch } from 'react-redux';
-// import logout from '../actions/logoutAction';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandHoldingUsd, faMoneyBill, faPiggyBank, faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
 
@@ -9,13 +8,6 @@ const element1 = <FontAwesomeIcon icon={faHandHoldingUsd} />
 const element2 = <FontAwesomeIcon icon={faPiggyBank} />
 const element3 = <FontAwesomeIcon icon={faSignOutAlt} />
 const Nav = () => {
-//   const history = useHistory();
-//   const dispatch = useDispatch();
-
-//   const handleClick = () => {
-//     dispatch(logout());
-//     history.push('/');
-//   };
 
   return (
     <nav>

@@ -14,7 +14,7 @@ const AddTransaction = () => {
   const [transactionData, setTransactionData] = useState({
     data: 0.01,
   });
-  // Load measurements from state
+
   const measurements = useSelector((state) => state.measurements.measurements);
 
   const history = useHistory();
@@ -60,6 +60,7 @@ const AddTransaction = () => {
       <div className="container">
         <div className="select-wrapper">
           <select
+            className='select-box'
             name="select-measurements"
             id="select-measurements"
             onChange={handleSelectChange}
@@ -71,6 +72,7 @@ const AddTransaction = () => {
             ))}
           </select>
           <input
+            className='input-box'
             id="measurement-input"
             type="number"
             step="0.01"
