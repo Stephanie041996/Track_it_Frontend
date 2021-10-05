@@ -4,6 +4,9 @@ import React from 'react';
 import MeasurementItem from '../components/MeasurementItem';
  import loadMeasurements from '../actions/measurementsAction';
  import { useDispatch } from 'react-redux';
+ import Nav from '../components/Nav';
+ import Topbanner from '../components/Topbanner';
+ import Banner from '../components/Banner'
  
 const Measurements = () => {
   // Load measurements from state
@@ -14,7 +17,14 @@ const Measurements = () => {
   }, [dispatch]);
 
   return (
+    <>
+    <Topbanner />
+    <div className="banner-section">
+    <Banner />
+    </div>
+   
     <div className="measurements">
+           
       {measurements.map((measurement) => (
         <MeasurementItem
           key={measurement.id}
@@ -24,7 +34,9 @@ const Measurements = () => {
         />
         
       ))}
+          <Nav />
     </div>
+    </>
   );
 };
 

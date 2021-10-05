@@ -21,6 +21,7 @@ import AddTransaction from '../components/AddTransaction';
   import axios from "axios";
 
   import Home from "../components/Home";
+import Topbanner from '../components/Topbanner';
 
   
   export default class App extends Component {
@@ -85,6 +86,7 @@ import AddTransaction from '../components/AddTransaction';
   return (
     <div className="App">
       <Switch>
+ 
         {/* <Route path="/" exact component={Measurements} /> */}
         <Route exact path="/add" component={AddTransaction} />
         <Route path="/progress/:measurementId" component={Progress} />
@@ -112,7 +114,7 @@ import AddTransaction from '../components/AddTransaction';
             />
         <Redirect to="/" />
       </Switch>
-      <Nav />
+  
     </div>
   );
 }

@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
+import '../Style/App.css';
+import Nav from './Nav';
+import Topbanner from './Topbanner';
 
 const AddTransaction = () => {
   const [measurementId, setMeasurementId] = useState({
@@ -50,6 +53,9 @@ const AddTransaction = () => {
   };
 
   return (
+    <>
+    <Topbanner />
+    <h2 className="Add-heading">PLEASE ENTER A TRANSACTION </h2>
     <div className="add-measure">
       <div className="container">
         <div className="select-wrapper">
@@ -72,12 +78,15 @@ const AddTransaction = () => {
             placeholder="$50.01"
             onChange={handleInputChange}
           />
-        </div>
+       
         <button type="submit" onClick={handleClick}>
           Add
         </button>
+        </div>
       </div>
     </div>
+    < Nav />
+    </>
   );
 };
 

@@ -1,7 +1,13 @@
 import { Link } from 'react-router-dom';
 // import { useDispatch } from 'react-redux';
 // import logout from '../actions/logoutAction';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHandHoldingUsd, faMoneyBill, faPiggyBank, faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
 
+const element = <FontAwesomeIcon icon={faMoneyBill} />
+const element1 = <FontAwesomeIcon icon={faHandHoldingUsd} />
+const element2 = <FontAwesomeIcon icon={faPiggyBank} />
+const element3 = <FontAwesomeIcon icon={faSignOutAlt} />
 const Nav = () => {
 //   const history = useHistory();
 //   const dispatch = useDispatch();
@@ -15,26 +21,22 @@ const Nav = () => {
     <nav>
       <div className="bottom-nav">
         <Link to="/add" className="button-wrapper">
-          <i className="far fa-plus-square" />
+        {element1}
           <p>Add Transaction</p>
         </Link>
-        <Link to="/tracker" className="button-wrapper">
-          <i className="fas fa-chart-line" />
+        <Link to="/dashboard" className="button-wrapper">
+        {element2}
           <p>Track It </p>
         </Link>
         
         <Link to="/progress/1" className="button-wrapper">
-          <i className="fas fa-chart-pie" />
+        {element}
           <p>Expenses</p>
         </Link>
-        <div
-          role="button"
-          tabIndex={0}
-          className="button-wrapper"
-        >
-          <i className="fas fa-sign-out-alt" />
+        <Link to="/" className="button-wrapper">
+     {element3}
           <p>Logout</p>
-        </div>
+        </Link>
       </div>
     </nav>
   );

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import ProgressItem from '../components/ProgressItem';
+import Nav from '../components/Nav';
+import Topbanner from '../components/Topbanner';
 
 // Turn your strings into dates, and then subtract them
 // to get a value that is either negative, positive, or zero.
@@ -27,7 +29,10 @@ const Progress = () => {
   }, []);
 
   return (
+    <>
+    <Topbanner />
     <div className="progress-container">
+           
       <h3>
         Your
         {transactionName}
@@ -41,7 +46,9 @@ const Progress = () => {
           data={transaction.data}
         />
       ))}
+          <Nav />
     </div>
+    </>
   );
 };
 
