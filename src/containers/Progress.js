@@ -24,7 +24,7 @@ const Progress = () => {
         setTransactionName(response.data.category);
       })
       .catch((err) => err);
-  }, []);
+  }, [measurementId]);
 
   return (
     <>

@@ -25,7 +25,7 @@ export default class Registration extends Component {
 
     axios
       .post(
-        "http://localhost:3001/registrations",
+        "https://guarded-brushlands-05784.herokuapp.com/registrations",
         {
           user: {
             username: username,
