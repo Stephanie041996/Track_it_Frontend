@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-
 import {
-  Switch, Route, Redirect,
+  BrowserRouter, Switch, Route, Redirect,
 } from 'react-router-dom';
 import axios from 'axios';
 import Measurements from './measurements';
@@ -71,48 +70,49 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <Switch>
+        <BrowserRouter>
+          <Switch>
 
-          <Route exact path="/add" component={AddTransaction} />
-          <Route path="/progress/:measurementId" component={Progress} />
+            <Route exact path="/add" component={AddTransaction} />
+            <Route path="/progress/:measurementId" component={Progress} />
 
-          <Route
-            exact
-            path="/"
-            render={(props) => (
-              <Home
-                {...props}
-                handleLogin={this.handleLogin}
-                handleLogout={this.handleLogout}
-                loggedInStatus={this.state.loggedInStatus}
-              />
-            )}
-          />
-          <Route
-            exact
-            path="/reg"
-            render={(props) => (
-              <Home2
-                {...props}
-                handleLogin={this.handleLogin}
-                handleLogout={this.handleLogout}
-                loggedInStatus={this.state.loggedInStatus}
-              />
-            )}
-          />
-          <Route
-            exact
-            path="/dashboard"
-            render={(props) => (
-              <Measurements
-                {...props}
-                loggedInStatus={this.state.loggedInStatus}
-              />
-            )}
-          />
-          <Redirect to="/" />
-        </Switch>
-
+            <Route
+              exact
+              path="/"
+              render={(props) => (
+                <Home
+                  {...props}
+                  handleLogin={this.handleLogin}
+                  handleLogout={this.handleLogout}
+                  loggedInStatus={this.state.loggedInStatus}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/reg"
+              render={(props) => (
+                <Home2
+                  {...props}
+                  handleLogin={this.handleLogin}
+                  handleLogout={this.handleLogout}
+                  loggedInStatus={this.state.loggedInStatus}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/dashboard"
+              render={(props) => (
+                <Measurements
+                  {...props}
+                  loggedInStatus={this.state.loggedInStatus}
+                />
+              )}
+            />
+            <Redirect to="/" />
+          </Switch>
+        </BrowserRouter>
       </div>
     );
   }
