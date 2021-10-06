@@ -1,10 +1,14 @@
-##  Crypto Catalogue App Built with React and Redux
-A catalogue of crypto currencies and thier current price informations which are fetched from  the API [coingecko](https://www.coingecko.com/en/api/documentation).
+# Track It Finance App
+## Project Description
+Tracker app is an application designed to track your spending and savings using back-end API, which was also custom built for this app ([API Repo](https://github.com/Stephanie041996/Track-it-backend)). It fetches data such as the different categorys of your finances eg Savings, Rent, Bills etc. It also allows user to post new transaction datato help keep track of how much you send or save in each category. and View all these expenses in thier category
 
- Users can filter the displayed crypto currencies searching by thier name. Then directly view each individually.
+![screenshot](./chill.png)
 
-![screenshot](./Screen-Shot.png)
-
+### Features
+- Login with username
+- Responsive design that works for Mobile and Desktop
+- Track finance data such as savings, bills,  rent, shopping, food and subscriptions
+- Post new transaction data
 ## BUILT WITH
 - JavaScript
 - NPM
@@ -17,7 +21,7 @@ A catalogue of crypto currencies and thier current price informations which are 
 - CSS
 
 ## Live Demo
-# [view site]()
+# [view site](https://track-it-finance.herokuapp.com/reg)
 
 ## Getting Started
 # Prerequisities
