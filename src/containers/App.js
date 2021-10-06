@@ -30,7 +30,7 @@ import AddTransaction from '../components/AddTransaction';
   
     checkLoginStatus() {
       axios
-        .get("http://localhost:3001/logged_in", { withCredentials: true })
+        .get("https://guarded-brushlands-05784.herokuapp.com/logged_in", { withCredentials: true })
         .then(response => {
           if (
             response.data.logged_in &&
