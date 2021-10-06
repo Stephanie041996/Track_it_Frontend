@@ -28,25 +28,25 @@ const Progress = () => {
 
   return (
     <>
-    <Topbanner />
-    <div className="progress-container">
-           
-      <h3>
-        Your
-        {' '}
-        {transactionName}
-        {' '}
-        Progress
-      </h3>
-      {transactions.map((transaction) => (
-        <ProgressItem
-          key={transaction.id}
-          date={transaction.created_at}
-          data={transaction.data}
-        />
-      ))}
-          <Nav />
-    </div>
+      <Topbanner />
+      <div className="progress-container">
+
+        <h3>
+          Your
+          {' '}
+          {transactionName}
+          {' '}
+          Progress
+        </h3>
+        {transactions.map((transaction) => (
+          <ProgressItem
+            key={transaction.id}
+            date={transaction.created_at}
+            data={transaction.data}
+          />
+        ))}
+        <Nav />
+      </div>
     </>
   );
 };

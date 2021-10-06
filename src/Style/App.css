@@ -1,7 +1,3 @@
-body {
-  overflow: none;
-  width: 100%;
-}
 .measurements {
   height: 82%;
   justify-content: center;
@@ -11,7 +7,6 @@ body {
   padding-bottom: 200px;
   padding-left: 10px;
   padding-right: 10px;
-
 }
 
 .measurement-item {
@@ -36,23 +31,21 @@ body {
     brightness(94%) contrast(91%);
 }
 
-.progress-item{
+.progress-item {
   display: flex;
   justify-content: space-between;
-  /* padding-left: 10px;
-  padding-right: 10px; */
   padding: 1rem;
   margin: 0.5rem;
   background-color: white;
   box-shadow: 2px 2px 5px gray;
- 
 }
 
-.progress-container{
+.progress-container {
   height: 82%;
   padding-top: 100px;
   padding-bottom: 20px;
 }
+
 .top-nav {
   list-style-type: none;
   position: fixed;
@@ -60,44 +53,42 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  background-color:#42b5e8;
+  background-color: #42b5e8;
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
-  z-index:1;
-
+  z-index: 1;
 }
 
-.top-nav a{
-color: white;
-text-decoration: none;
-}
-
-.bottom-nav {
-    list-style-type: none;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    background-color:#464a4a;
-    color: rgb(230, 230, 230);
-    padding-top: 20px;
-    padding-bottom: 20px;
- 
-}
-
-.bottom-nav a{
+.top-nav a {
   color: white;
   text-decoration: none;
 }
+
+.bottom-nav {
+  list-style-type: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #464a4a;
+  color: rgb(230, 230, 230);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+}
+
 .add-measure {
   height: 52%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .container {
@@ -107,46 +98,39 @@ text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-/* .select-wrapper{
-  
-  margin-left: 50px;
-} */
-.container, button {
+.container,
+button {
   width: 150px;
 }
 
 .Add-heading {
   text-align: center;
   padding-top: 100px;
-
 }
-.banner-section{
+
+.banner-section {
   padding-top: 70px;
   text-align: center;
-
 }
 
-.Login-form{
-align-items: center;
-justify-content: center;
-align-items: center;
-
+.Login-form {
+  align-items: center;
+  justify-content: center;
 }
 
-.select-box{
+.select-box {
   height: 45px;
   width: 309px;
 }
 
-.input-box{
+.input-box {
   height: 40px;
   width: 300px;
 }
 
-.input-form{
+.input-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,13 +142,12 @@ button {
   background-color: #42b5e8;
 }
 
-.home-section{
-
-text-align: center;
+.home-section {
+  text-align: center;
   padding-top: 150px;
 }
 
-.banner-chart img{
+.banner-chart img {
   width: 100%;
 }
 

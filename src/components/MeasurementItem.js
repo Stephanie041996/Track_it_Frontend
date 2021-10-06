@@ -1,7 +1,6 @@
- import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import '../Style/App.css';
-
 
 const MeasurementItem = ({ id, icon, category }) => (
   <Link to={`/progress/${id}`} className="measurement-item">
@@ -14,7 +13,7 @@ const MeasurementItem = ({ id, icon, category }) => (
 
 MeasurementItem.propTypes = {
   id: PropTypes.number.isRequired,
- icon: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
 };
 

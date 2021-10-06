@@ -1,13 +1,11 @@
-import React from 'react';
- import { useEffect } from 'react';
- import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import MeasurementItem from '../components/MeasurementItem';
- import loadMeasurements from '../actions/measurementsAction';
- import { useDispatch } from 'react-redux';
- import Nav from '../components/Nav';
- import Topbanner from '../components/Topbanner';
- import Banner from '../components/Banner'
- 
+import loadMeasurements from '../actions/measurementsAction';
+import Nav from '../components/Nav';
+import Topbanner from '../components/Topbanner';
+import Banner from '../components/Banner';
+
 const Measurements = () => {
   const measurements = useSelector((state) => state.measurements.measurements);
   const dispatch = useDispatch();
@@ -17,25 +15,25 @@ const Measurements = () => {
 
   return (
     <>
-    <Topbanner />
-    <div className="banner-section">
-    <Banner />
-    </div>
-   
-    <div className="measurements">
-           
-      {measurements.map((measurement) => (
-        <MeasurementItem
-          key={measurement.id}
-          id={measurement.id}
-          icon={measurement.icon}
-          category={measurement.category}
-        />
-        
-      ))}
-        
-    </div>
-    <Nav />
+      <Topbanner />
+      <div className="banner-section">
+        <Banner />
+      </div>
+
+      <div className="measurements">
+
+        {measurements.map((measurement) => (
+          <MeasurementItem
+            key={measurement.id}
+            id={measurement.id}
+            icon={measurement.icon}
+            category={measurement.category}
+          />
+
+        ))}
+
+      </div>
+      <Nav />
     </>
   );
 };

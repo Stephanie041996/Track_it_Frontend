@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import axios from "axios";
+import React, { Component } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
-import Registration from "./auth/Registration";
-import Topbanner from "./Topbanner";
+import Registration from './auth/Registration';
+import Topbanner from './Topbanner';
 
 export default class Home extends Component {
   constructor(props) {
@@ -14,26 +14,26 @@ export default class Home extends Component {
 
   handleSuccessfulAuth(data) {
     this.props.handleLogin(data);
-    this.props.history.push("/dashboard");
+    this.props.history.push('/dashboard');
   }
 
   handleLogoutClick() {
     axios
-      .delete("https://guarded-brushlands-05784.herokuapp.com/logout", { withCredentials: true })
-      .then(response => {
+      .delete('https://guarded-brushlands-05784.herokuapp.com/logout', { withCredentials: true })
+      .then((response) => {
         this.props.handleLogout();
       })
-      .catch(error => {
-        console.log("logout error", error);
+      .catch((error) => {
+        console.log('logout error', error);
       });
   }
 
   render() {
     return (
       <div className="home-section">
-         <Topbanner />
+        <Topbanner />
         <Registration handleSuccessfulAuth={this.handleSuccessfulAuth} />
-     
+
         <Link to="/">Already Registerd ? Log in</Link>
 
       </div>
