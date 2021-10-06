@@ -60,7 +60,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  background-color: rgb(53, 110, 156);
+  background-color:#42b5e8;
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -80,8 +80,8 @@ text-decoration: none;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: rgb(37, 37, 37);
-    color: white;
+    background-color:#464a4a;
+    color: rgb(230, 230, 230);
     padding-top: 20px;
     padding-bottom: 20px;
  
@@ -97,6 +97,7 @@ text-decoration: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 
 .container {
@@ -106,8 +107,13 @@ text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
+/* .select-wrapper{
+  
+  margin-left: 50px;
+} */
 .container, button {
   width: 150px;
 }
@@ -125,27 +131,31 @@ text-decoration: none;
 
 .Login-form{
 align-items: center;
-padding-left: 200px;
+justify-content: center;
+align-items: center;
+
 }
 
 .select-box{
   height: 45px;
-  width: 409px;
+  width: 309px;
 }
 
 .input-box{
   height: 40px;
-  width: 400px;
+  width: 300px;
 }
 
 .input-form{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 button {
   height: 45px;
-  width: 409px;
+  width: 309px;
+  background-color: #42b5e8;
 }
 
 .home-section{
@@ -156,4 +166,9 @@ text-align: center;
 
 .banner-chart img{
   width: 100%;
+}
+
+h3 {
+  color: #464a4a !important;
+  text-align: center;
 }

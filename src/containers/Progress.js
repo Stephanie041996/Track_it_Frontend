@@ -33,6 +33,7 @@ const Progress = () => {
            
       <h3>
         Your
+        {' '}
         {transactionName}
         {' '}
         Progress
