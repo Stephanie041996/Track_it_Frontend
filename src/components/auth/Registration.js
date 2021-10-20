@@ -1,5 +1,7 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import axios from 'axios';
+import PropTypes from 'prop-types';
 
 export default class Registration extends Component {
   constructor(props) {
@@ -7,7 +9,6 @@ export default class Registration extends Component {
 
     this.state = {
       username: '',
-      registrationErrors: '',
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -39,8 +40,8 @@ export default class Registration extends Component {
           this.props.handleSuccessfulAuth(response.data);
         }
       })
-      .catch((error) => {
-        console.log('registration error', error);
+      .catch(() => {
+
       });
     event.preventDefault();
   }
@@ -65,3 +66,8 @@ export default class Registration extends Component {
     );
   }
 }
+
+Registration.propTypes = {
+  handleSuccessfulAuth: PropTypes.func.isRequired,
+
+};

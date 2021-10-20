@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Registration from './auth/Registration';
 import Topbanner from './Topbanner';
 
@@ -20,11 +22,10 @@ export default class Home extends Component {
   handleLogoutClick() {
     axios
       .delete('https://guarded-brushlands-05784.herokuapp.com/logout', { withCredentials: true })
-      .then((response) => {
+      .then(() => {
         this.props.handleLogout();
       })
-      .catch((error) => {
-        console.log('logout error', error);
+      .catch(() => {
       });
   }
 
@@ -40,3 +41,10 @@ export default class Home extends Component {
     );
   }
 }
+
+Home.propTypes = {
+  handleLogin: PropTypes.func.isRequired,
+  handleLogout: PropTypes.func.isRequired,
+  history: PropTypes.func.isRequired,
+  push: PropTypes.func.isRequired,
+};

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import PropTypes from 'prop-types';
 
 export default class Login extends Component {
   constructor(props) {
@@ -7,7 +8,7 @@ export default class Login extends Component {
 
     this.state = {
       username: '',
-      loginErrors: '',
+
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -39,8 +40,8 @@ export default class Login extends Component {
           this.props.handleSuccessfulAuth(response.data);
         }
       })
-      .catch((error) => {
-        console.log('login error', error);
+      .catch(() => {
+
       });
     event.preventDefault();
   }
@@ -65,3 +66,8 @@ export default class Login extends Component {
     );
   }
 }
+
+Login.propTypes = {
+  handleSuccessfulAuth: PropTypes.func.isRequired,
+
+};
