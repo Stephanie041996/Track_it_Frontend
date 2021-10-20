@@ -2,6 +2,8 @@
 ## Project Description
 Tracker app is an application designed to track your spending and savings using back-end API, which was also custom built for this app ([API Repo](https://github.com/Stephanie041996/Track-it-backend)). It fetches data such as the different categorys of your finances eg Savings, Rent, Bills etc. It also allows user to post new transaction datato help keep track of how much you send or save in each category. and View all these expenses in thier category
 
+Additionally I made the app responsive, creating both tablet and desktop versions, following design guidelines
+
 ![screenshot](./chill.png)
 
 ### Features
