@@ -35,15 +35,16 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  margin: 0.5rem;
+  color: #696969;
   background-color: white;
-  box-shadow: 2px 2px 5px gray;
+  border-bottom:  1px solid #f3f4f6;
 }
 
 .progress-container {
   height: 82%;
   padding-top: 100px;
   padding-bottom: 20px;
+  background-color: #f3f4f6;
 }
 
 .top-nav {
@@ -153,5 +154,9 @@ button {
 
 h3 {
   color: #464a4a !important;
+  text-align: center;
+}
+
+.button-wrapper {
   text-align: center;
 }

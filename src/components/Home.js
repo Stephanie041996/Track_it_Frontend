@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-prop-types */
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
@@ -43,6 +44,10 @@ export default class Home extends Component {
 Home.propTypes = {
   handleLogin: PropTypes.func.isRequired,
   handleLogout: PropTypes.func.isRequired,
-  history: PropTypes.func.isRequired,
-  push: PropTypes.func.isRequired,
+  history: PropTypes.object.isRequired,
+  push: PropTypes.func,
+};
+
+Home.defaultProps = {
+  push() {},
 };

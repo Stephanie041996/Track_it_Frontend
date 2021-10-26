@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+/* eslint-disable no-alert */
 import React, { Component } from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
@@ -41,7 +41,7 @@ export default class Registration extends Component {
         }
       })
       .catch(() => {
-
+        alert('Please enter a valid user name ');
       });
     event.preventDefault();
   }
