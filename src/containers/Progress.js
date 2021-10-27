@@ -42,6 +42,7 @@ const Progress = () => {
           <ProgressItem
             key={transaction.id}
             date={transaction.created_at}
+            time={transaction.created_at}
             data={transaction.data}
           />
         ))}
