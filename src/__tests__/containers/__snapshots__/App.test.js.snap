@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Takes website's snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="home-section"
+    >
+      <nav>
+        <div
+          class="top-nav"
+        >
+          <a
+            href="/add"
+          >
+            <p>
+              Track It
+            </p>
+          </a>
+        </div>
+      </nav>
+      <div
+        class="Login-form"
+      >
+        <form
+          class="input-form"
+        >
+          <input
+            class="input-box"
+            name="username"
+            placeholder="username"
+            required=""
+            type="text"
+            value=""
+          />
+          <button
+            type="submit"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+      <a
+        href="/reg"
+      >
+        Not Registerd ? Register
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

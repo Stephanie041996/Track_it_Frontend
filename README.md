@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Track It Finance App
+## Project Description
+Tracker app is an application designed to track your spending and savings using back-end API, which was also custom built for this app ([API Repo](https://github.com/Stephanie041996/Track-it-backend)). It fetches data such as the different categorys of your finances eg Savings, Rent, Bills etc. It also allows user to post new transaction datato help keep track of how much you send or save in each category. and View all these expenses in thier category
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Additionally I made the app responsive, creating both tablet and desktop versions, following design guidelines
 
-## Available Scripts
+![screenshot](./chill.png)
 
-In the project directory, you can run:
+### Features
+- Login with username
+- Responsive design that works for Mobile and Desktop
+- Track finance data such as savings, bills,  rent, shopping, food and subscriptions
+- Post new transaction data
+## BUILT WITH
+- JavaScript
+- NPM
+- Node.js
+- CSS
+- ES6
+- React
+- React-Create-App
+- Redux
+- CSS
 
-### `yarn start`
+## Live Demo
+# [view site](https://track-it-finance.herokuapp.com/reg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
+# Prerequisities
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To run this project locally, you must have node and npm installed on your machine.
 
-### `yarn test`
+# Setup
+To set up this project on your local machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Navigate to the folder where you want the repository to be copied and run 
 
-### `yarn build`
+`git clone https://github.com/Stephanie041996/Track_it_Frontend.git`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Navigate to the directory :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`cd track-it-frontend`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To start the server: 
 
-### `yarn eject`
+`npm start`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Go to http://localhost:3000/ in your browser to see the application running
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# To test the code
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+ - Run npm test
+ - Enter 'a' to see all tests
+## Author
+**Stephanie Sakuhuni**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- GitHub: [@stephanie041996](https://github.com/Stephanie041996)
+- LinkedIn: [Stephanie Sakuhuni](www.linkedin.com/in/stephanie-michelle-sakuhuni) 
 
-## Learn More
+​
+- 
+## 🤝 Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions, issues, and feature requests are welcome!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feel free to check the [issues page](../../issues/).
 
-### Code Splitting
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Give a ⭐️ if you like this project!
 
-### Analyzing the Bundle Size
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
 
-### Making a Progressive Web App
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.

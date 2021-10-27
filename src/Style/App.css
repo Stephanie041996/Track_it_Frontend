@@ -1,0 +1,162 @@
+.measurements {
+  height: 82%;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 8rem);
+  padding-bottom: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.measurement-item {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: white;
+  box-shadow: 2px 2px 5px gray;
+}
+
+.measurement-item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.measurement-item img {
+  width: 4.5rem;
+  filter:
+    invert(68%) sepia(34%) saturate(764%) hue-rotate(169deg)
+    brightness(94%) contrast(91%);
+}
+
+.progress-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  color: #696969;
+  background-color: white;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.progress-container {
+  height: 82%;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  background-color: #f3f4f6;
+}
+
+.top-nav {
+  list-style-type: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #42b5e8;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 1;
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.bottom-nav {
+  list-style-type: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #464a4a;
+  color: rgb(230, 230, 230);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.add-measure {
+  height: 52%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  background: white;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container,
+button {
+  width: 150px;
+}
+
+.Add-heading {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.banner-section {
+  padding-top: 70px;
+  text-align: center;
+}
+
+.Login-form {
+  align-items: center;
+  justify-content: center;
+}
+
+.select-box {
+  height: 45px;
+  width: 309px;
+}
+
+.input-box {
+  height: 40px;
+  width: 300px;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  height: 45px;
+  width: 309px;
+  background-color: #42b5e8;
+}
+
+.home-section {
+  text-align: center;
+  padding-top: 150px;
+}
+
+.banner-chart img {
+  width: 100%;
+}
+
+h3 {
+  color: #464a4a !important;
+  text-align: center;
+}
+
+.button-wrapper {
+  text-align: center;
+}
